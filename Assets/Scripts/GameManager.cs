@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     }
     public void IncreaseScore()
     {
-        // Ses kaynaðýndan sesi çal
+        
         audioSource.PlayOneShot(passSoundEffect);
         score++;
         scoreText.text = score.ToString();
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         ScoreCheck();
         hisghestScoreText.text = PlayerPrefs.GetInt("highest").ToString();
 
-        if (gameOverPanel != null) // Null kontrolü
+        if (gameOverPanel != null) // Null kontrolÃ¼
         {
             gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
